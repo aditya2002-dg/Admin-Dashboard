@@ -341,16 +341,21 @@ th {
  }
 
 @media (max-width: 576px) {
-    .fs-20{
-        font-size: 16px !important;
+
+    .content-in {
+        padding: 8px 5px !important;
     }
-    
-    .fs-18{
+
+    .fs-20{
         font-size: 15px !important;
     }
     
+    .fs-18{
+        font-size: 14px !important;
+    }
+    
     .fs-15{
-        font-size: 11px !important;
+        font-size: 10px !important;
     }
     
     .fs-13{
