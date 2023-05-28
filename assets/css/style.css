@@ -369,5 +369,18 @@ th {
     .fs-10{
         font-size: 8px !important;
     }
+
+    .content-5 .member-1,
+    .member-2,
+    .member-3 {
+        display: block !important;
+        margin-bottom: 5px;
+    }
+
+    .content-5 .member-1>.user-icon-1,
+    .member-2>.user-icon-1,
+    .member-3>.user-icon-1 {
+        margin-bottom: 5px;
+    }
 }
 /* Media Query-End */
