@@ -310,6 +310,7 @@ th {
 @media (max-width: 1250px){
     .wrapper{
         display: block !important;
+        overflow-x: hidden !important;
     }
 
     .calendar {
