@@ -1,0 +1,807 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Admin Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <div class="wrapper d-flex">
+        
+        <div class="sidebar" id="sidebar">
+            <div class="header mb-4">
+                <img src="assets/images/Logo.png" alt="logo" id="Logo" class="w-100">
+            </div>
+            <ul class="list-group mx-5">
+                <li class="list-group-item border-0 mb-3 rounded-3 active"><a href="javascript:void(0);"
+                        class="fs-15 fw-bold"><img src="assets/images/Side-bar/1.png" class="pe-4" />Dashboard</a></li>
+                <li class="list-group-item border-0 mb-3 rounded-3"><a href="javascript:void(0);"
+                        class="fs-15 fw-bold"><img src="assets/images/Side-bar/2.png" class="pe-4" />Analytics</a></li>
+                <li class="list-group-item border-0 mb-3 rounded-3"><a href="javascript:void(0);"
+                        class="fs-15 fw-bold"><img src="assets/images/Side-bar/3.png" class="pe-4" />Timesheets</a></li>
+                <li class="list-group-item border-0 mb-3 rounded-3"><a href="javascript:void(0);"
+                        class="fs-15 fw-bold"><img src="assets/images/Side-bar/4.png" class="pe-4" />Todo</a></li>
+                <li class="list-group-item border-0 mb-3 rounded-3"><a href="javascript:void(0);"
+                        class="fs-15 fw-bold"><img src="assets/images/Side-bar/5.png" class="pe-4" />Report</a></li>
+                <li class="list-group-item border-0 rounded-3"><a href="javascript:void(0);" class="fs-15 fw-bold"><img
+                            src="assets/images/Side-bar/6.png" class="pe-4" />Details</a></li>
+            </ul>
+        </div>
+
+        <div class="content w-100 mb-2 py-2">
+            <div class="container-fluid">
+                <div class="search-menu d-flex align-items-center mb-2">
+                    <span class="btn open-btn ps-0" onclick="toggleSidebar()"><i
+                            class="fa-solid fa-bars-staggered"></i></span>
+                    <div class="row align-items-center w-100">
+                        <div class="col-md-6 o-md-2">
+                            <div class="input-group search">
+                                <input type="text" class="form-control rounded-start-5"
+                                    placeholder="Search ebuildbazaar..." aria-label="Search">
+                                <button class="btn bg-yellow rounded-end-5"><i
+                                        class="fa-solid fa-magnifying-glass"></i></button>
+                            </div>
+                        </div>
+                        <div class="col-md-6 o-md-1 mb-2">
+                            <ul class="list-group list-group-horizontal justify-content-end align-items-center">
+                                <li class="list-group-item border-0 pe-0 py-0"><sup class="fa-solid fa-bell"></i><sup
+                                            class="bg-yellow p-1 rounded-5">12</sup></li>
+                                <li class="list-group-item border-0 fw-bold pe-0 py-0 name">Hi, Karan Sethi</li>
+                                <li class="list-group-item border-0 pe-0 py-0"><img src="assets/images/Karan Sir.png"
+                                        alt="" class="b-yellow w-75"></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="row text-center">
+                    <div class="col-12">
+                        <h4>Dashboard</h4>
+                        <h6 class="text-muted">ebuildbazaar / Dashboard</h6>
+                    </div>
+                </div>
+
+                <div class="content-in bg-light rounded-4 px-2 py-3">
+
+                    <!--Section-1-->
+                    <section class="content-1 mb-3">
+                        <div class="container-fluid">
+                            <div class="row align-items-center">
+                                <div class="col-lg-6 col-md-12 mb-3">
+                                    <h1>Activities Tracker</h1>
+                                    <h5 class="fw-bold m-0">23rd May | 10:43 AM</h5>
+                                </div>
+                                <div class="col-lg-6 col-md-12">
+                                    <div class="button d-flex gap-4 align-items-center justify-content-center">
+                                        <ul class="nav nav-tabs border-0 bg-white rounded-pill bo-shadow p-2">
+                                            <li class="nav-item dropdown">
+                                                <a class="nav-link dropdown-toggle fw-bold p-0 border-0 fs-20"
+                                                    data-bs-toggle="dropdown" href="javascript:void(0);" role="button"
+                                                    aria-expanded="false">Contact Now <i
+                                                        class="fa-solid fa-caret-down bg-yellow rounded-circle p-3 ms-2"></i></a>
+                                                <ul class="dropdown-menu">
+                                                    <li class="border border-top-0 border-end"><a
+                                                            class="dropdown-item fw-bold"
+                                                            href="javascript:void(0);">Director <sup>Karan</sup></a>
+                                                    </li>
+                                                    <li class="border border-top-0 border-end"><a
+                                                            class="dropdown-item fw-bold"
+                                                            href="javascript:void(0);">Contractor <sup>Aditya</sup></a>
+                                                    </li>
+                                                    <li class="border border-top-0 border-end"><a
+                                                            class="dropdown-item fw-bold"
+                                                            href="javascript:void(0);">Site Manager <sup>Jamal</sup></a>
+                                                    </li>
+                                                    <li><a class="dropdown-item fw-bold"
+                                                            href="javascript:void(0);">Proj. Manager
+                                                            <sup>Mohit</sup></a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                        <button class="btn bg-white rounded-pill bo-shadow fs-20">
+                                            <span class="m-0 fw-bold">Add Task <span class="ps-2"><i
+                                                        class="fa-solid fa-plus bg-yellow rounded-5 p-3"></i></span></span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!--Section-1-End-->
+
+                    <!--Section-2-->
+                    <section class="content-2 mb-3">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-lg-7 col-md-12 mb-3">
+                                    <div class="card mb-3 bo-shadow rounded-5">
+                                        <div
+                                            class="card-header bg-transparent border-0 d-flex align-items-center gap-4">
+                                            <span class="fw-bold fs-20">Work Schedule</span>
+                                            <span
+                                                class="btn fw-bold border border-black rounded-pill px-3 py-2 fs-13">This
+                                                Quarter (Q2)<i class="fa-solid fa-caret-down ps-2"></i></span>
+                                            <i class="fa-solid fa-ellipsis-vertical ms-auto"></i>
+                                        </div>
+                                        <div class="card-body px-2 py-0">
+                                            <div class="table-responsive">
+                                                <table class="table table-borderless m-0">
+                                                    <thead>
+                                                        <tr>
+                                                            <th class="text-center fs-13 text-muted"> Task
+                                                            </th>
+                                                            <th class="text-center fs-13 text-muted"> Status
+                                                            </th>
+                                                            <th class="text-center fs-13 text-muted"> Data
+                                                                Added</th>
+                                                            <th class="text-center fs-13 text-muted"> ETA
+                                                            </th>
+                                                            <th style="width: 20%;" class="percent"></th>
+                                                            <th class="text-center fs-13 text-muted"> %</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr class="bg-yellow-opac">
+                                                            <td class="fw-bold rounded-start-5 fs-12"><i
+                                                                    class="fa-regular fa-folder yellow border border-3 border-warning rounded-5 p-1 me-1"></i>
+                                                                HVAC setup</td>
+                                                            <td class="text-center fs-12"><span
+                                                                    class="m-0 bg-green rounded-pill px-3 py-1 fw-bold">On
+                                                                    Track</span></td>
+                                                            <td class="text-center fs-12">13/05</td>
+                                                            <td class="text-center fs-12">27/05</td>
+                                                            <td>
+                                                                <div class="progress" role="progressbar"
+                                                                    aria-valuenow="78" aria-valuemin="0"
+                                                                    aria-valuemax="100" style="height: 6px">
+                                                                    <div class="progress-bar bg-yellow"
+                                                                        style="width: 78%"></div>
+                                                                </div>
+                                                            </td>
+                                                            <td class="rounded-end-5 fs-12">78%</td>
+                                                        </tr>
+                                                        <tr class="bg-yellow-opac">
+                                                            <td class="fw-bold rounded-start-5 fs-12"><i
+                                                                    class="fa-regular fa-folder yellow border border-3 border-warning rounded-5 p-1 me-1"></i>
+                                                                Drywall</td>
+                                                            <td class="text-center fs-12"><span
+                                                                    class="m-0 bg-red rounded-pill px-3 py-1 fw-bold">On
+                                                                    Hold</span>
+                                                            </td>
+                                                            <td class="text-center fs-12">13/05</td>
+                                                            <td class="text-center fs-12">05/07</td>
+                                                            <td>
+                                                                <div class="progress" role="progressbar"
+                                                                    aria-valuenow="23" aria-valuemin="0"
+                                                                    aria-valuemax="100" style="height: 6px">
+                                                                    <div class="progress-bar bg-yellow"
+                                                                        style="width: 23%"></div>
+                                                                </div>
+                                                            </td>
+                                                            <td class="rounded-end-5 fs-12">23%</td>
+                                                        </tr>
+                                                        <tr class="bg-yellow-opac">
+                                                            <td class="fw-bold rounded-start-5 fs-12"><i
+                                                                    class="fa-regular fa-folder yellow border border-3 border-warning rounded-5 p-1 me-1"></i>
+                                                                Painting & Decor</td>
+                                                            <td class="text-center fs-12"><span
+                                                                    class="m-0 bg-green rounded-pill px-3 py-1 fw-bold">On
+                                                                    Track</span></td>
+                                                            <td class="text-center fs-12">13/05</td>
+                                                            <td class="text-center fs-12">13/06</td>
+                                                            <td>
+                                                                <div class="progress" role="progressbar"
+                                                                    aria-valuenow="68" aria-valuemin="0"
+                                                                    aria-valuemax="100" style="height: 6px">
+                                                                    <div class="progress-bar bg-yellow"
+                                                                        style="width: 68%"></div>
+                                                                </div>
+                                                            </td>
+                                                            <td class="rounded-end-5 fs-12">68%</td>
+                                                        </tr>
+                                                        <tr class="bg-yellow-opac">
+                                                            <td class="fw-bold rounded-start-5 fs-12"><i
+                                                                    class="fa-regular fa-folder yellow border border-3 border-warning rounded-5 p-1 me-1"></i>
+                                                                Fixtures</td>
+                                                            <td class="text-center fs-12"><span
+                                                                    class="m-0 bg-orange rounded-pill px-3 py-1 fw-bold">Depature</span>
+                                                            </td>
+                                                            <td class="text-center fs-12">13/05</td>
+                                                            <td class="text-center fs-12">27/06</td>
+                                                            <td>
+                                                                <div class="progress" role="progressbar"
+                                                                    aria-valuenow="34" aria-valuemin="0"
+                                                                    aria-valuemax="100" style="height: 6px">
+                                                                    <div class="progress-bar bg-yellow"
+                                                                        style="width: 34%"></div>
+                                                                </div>
+                                                            </td>
+                                                            <td class="rounded-end-5 fs-12">34%</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                                <div
+                                                    class="card-footer bg-transparent border-0 d-flex align-items-center px-0 py-1 justify-content-between">
+                                                    <span class="btn fs-12"><i
+                                                            class="fa-solid fa-caret-down bg-yellow rounded-pill px-3 py-2"></i></span>
+                                                    <div class="butt-in d-flex align-items-center">
+                                                        <span class="btn fs-12"><i
+                                                                class="fa-solid fa-plus bg-yellow rounded-pill px-3 py-2"></i></span>
+                                                        <span class="btn fs-12"><i
+                                                                class="fa-solid fa-plus bg-yellow rounded-pill px-3 py-2"></i></span>
+                                                        <span class="btn fs-12"><i
+                                                                class="fa-solid fa-plus bg-yellow rounded-pill px-3 py-2"></i></span>
+                                                        <span
+                                                            class="btn bg-yellow py-2 px-3 rounded-pill fw-bold fs-12">View
+                                                            Reports</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-5 col-md-12">
+                                    <div class="card mb-3 bo-shadow rounded-4">
+                                        <div
+                                            class="card-header bg-transparent border-0 d-flex align-items-center justify-content-between">
+                                            <span class="fs-20 m-0 fw-bold">Gallery Updates</span>
+                                            <div class="gal-but d-flex align-items-center gap-2">
+                                                <span
+                                                    class="btn bg-yellow px-2 rounded-pill fw-bold fs-12">Today's</span>
+                                                <span class="btn bg-yellow-opac px-2 rounded-pill fw-bold fs-12">View
+                                                    All</span>
+                                                <i class="fa-solid fa-ellipsis-vertical"></i>
+                                            </div>
+                                        </div>
+                                        <div class="card-body d-flex align-items-center gap-2">
+                                            <div
+                                                class="btn user-icon-1 d-flex align-items-center border border-2 border-warning rounded-pill px-3 py-1 gap-2 bg-light">
+                                                <img src="assets/images/user.png" alt=""
+                                                    class="bg-yellow rounded-circle">
+                                                <div class="user-name text-start">
+                                                    <p class="fw-bold m-0 fs-12">Adrian Tomes</p>
+                                                    <p class="m-0 fs-12">Contractor</p>
+                                                </div>
+                                            </div>
+                                            <div
+                                                class="btn user-icon-1 d-flex align-items-center border border-2 border-warning rounded-pill px-3 py-1 gap-2 bg-light">
+                                                <img src="assets/images/user.png" alt=""
+                                                    class="bg-danger rounded-circle">
+                                                <div class="user-name text-start">
+                                                    <p class="fw-bold m-0 fs-12">H.Spector,</p>
+                                                    <p class="m-0 fs-12">Consultant</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-footer image-gallery bg-transparent border-0 d-grid">
+                                            <img src="assets/images/gallery/1.png" alt="" class="w-100">
+                                            <img src="assets/images/gallery/2.png" alt="" class="w-100">
+                                            <img src="assets/images/gallery/3.png" alt="" class="w-100">
+                                            <img src="assets/images/gallery/4.png" alt="" class="w-100">
+                                            <img src="assets/images/gallery/5.png" alt="" class="w-100">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!--Section-2-End-->
+
+                    <!--Secton-3-->
+                    <div class="content-3 mb-3">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-lg-6 col-md-12">
+                                    <div class="row">
+                                        <div class="col-md-4 col-6 mb-2">
+                                            <div class="card mb-3 rounded-4 bo-shadow">
+                                                <div
+                                                    class="card-header d-flex bg-transparent justify-content-between p-2 border-0 mb-4">
+                                                    <span class="fw-bold fs-18">Estimated Completion</span>
+                                                    <i class="fa-solid fa-ellipsis-vertical ms-auto"></i>
+                                                </div>
+                                                <div
+                                                    class="card-footer bg-transparent d-flex justify-content-between p-2 border-0">
+                                                    <span class="fs-20 fw-bold m-0">42.0%</span>
+                                                    <i
+                                                        class="fa-brands fa-algolia yellow bg-yellow-opac rounded-3 p-2 ms-auto"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 col-6 mb-2">
+                                            <div class="card mb-3 rounded-4 bo-shadow">
+                                                <div
+                                                    class="card-header d-flex bg-transparent justify-content-between p-2 border-0 mb-4">
+                                                    <span class="fw-bold fs-18">Phases Completed</span>
+                                                    <i class="fa-solid fa-ellipsis-vertical ms-auto"></i>
+                                                </div>
+                                                <div
+                                                    class="card-footer bg-transparent d-flex justify-content-between p-2 border-0">
+                                                    <span class="fs-20 fw-bold m-0"><sup>3</sup>/<sub>6</sub></span>
+                                                    <i
+                                                        class="fa-regular fa-folder yellow bg-yellow-opac rounded-3 p-2 ms-auto"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 col-6">
+                                            <div class="card mb-3 rounded-4 bo-shadow">
+                                                <div
+                                                    class="card-header d-flex bg-transparent justify-content-between p-2 border-0 mb-4">
+                                                    <span class="fw-bold fs-18">Phases Pending</span>
+                                                    <i class="fa-solid fa-ellipsis-vertical ms-auto"></i>
+                                                </div>
+                                                <div
+                                                    class="card-footer bg-transparent d-flex justify-content-between p-2 border-0">
+                                                    <span class="fs-20 fw-bold m-0">13</span>
+                                                    <i
+                                                        class="fa-solid fa-rotate-left yellow bg-yellow-opac rounded-3 p-2 ms-auto"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-12">
+                                    <div class="container-fluid">
+                                        <div class="swiper mySwiper">
+                                            <div class="swiper-wrapper">
+                                                <div class="swiper-slide">
+                                                    <div class="card text-bg-dark border-0 rounded-4">
+                                                        <img src="assets/images/cards/1.png" class="card-img" alt="...">
+                                                        <div class="card-img-overlay">
+                                                            <span class="card-title fs-12 fw-bold">Category New!</span>
+                                                            <span class="card-text fs-12 fw-bold">Cross-selling Product
+                                                                Placement</span>
+                                                            <div
+                                                                class="link d-flex justify-content-between align-items-center ">
+                                                                <a href="javascript:void(0);"
+                                                                    class="card-link text-black px-1 rounded-pill bg-light fs-12">$
+                                                                    650</a>
+                                                                <a href="javascript:void(0);"
+                                                                    class="card-link text-warning"><i
+                                                                        class="fa-regular fa-heart fs-12"></i></a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="card text-bg-dark border-0 rounded-4">
+                                                        <img src="assets/images/cards/1.png" class="card-img" alt="...">
+                                                        <div class="card-img-overlay">
+                                                            <span class="card-title fs-12 fw-bold">Category New!</span>
+                                                            <span class="card-subtitle fs-12 fw-bold">Cross-selling
+                                                                Product Placement</span>
+                                                            <div
+                                                                class="link d-flex justify-content-between align-items-center ">
+                                                                <a href="javascript:void(0);"
+                                                                    class="card-link text-black px-1 rounded-pill bg-light fs-12">$
+                                                                    650</a>
+                                                                <a href="javascript:void(0);"
+                                                                    class="card-link text-warning"><i
+                                                                        class="fa-regular fa-heart fs-12"></i></a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="card text-bg-dark border-0 rounded-4">
+                                                        <img src="assets/images/cards/1.png" class="card-img" alt="...">
+                                                        <div class="card-img-overlay">
+                                                            <span class="card-title fs-12 fw-bold">Category New!</span>
+                                                            <span class="card-subtitle fs-12 fw-bold">Cross-selling
+                                                                Product Placement</span>
+                                                            <div
+                                                                class="link d-flex justify-content-between align-items-center ">
+                                                                <a href="javascript:void(0);"
+                                                                    class="card-link text-black px-1 rounded-pill bg-light fs-12">$
+                                                                    650</a>
+                                                                <a href="javascript:void(0);"
+                                                                    class="card-link text-warning"><i
+                                                                        class="fa-regular fa-heart fs-12"></i></a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="card text-bg-dark border-0 rounded-4">
+                                                        <img src="assets/images/cards/1.png" class="card-img" alt="...">
+                                                        <div class="card-img-overlay">
+                                                            <span class="card-title fs-12 fw-bold">Category New!</span>
+                                                            <span class="card-subtitle fs-12 fw-bold">Cross-selling
+                                                                Product Placement</span>
+                                                            <div
+                                                                class="link d-flex justify-content-between align-items-center ">
+                                                                <a href="javascript:void(0);"
+                                                                    class="card-link text-black px-1 rounded-pill bg-light fs-12">$
+                                                                    650</a>
+                                                                <a href="javascript:void(0);"
+                                                                    class="card-link text-warning"><i
+                                                                        class="fa-regular fa-heart fs-12"></i></a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Secton-3-End-->
+
+                    <!--Section-4-->
+                    <section class="content-4 mb-3">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-lg-6 col-md-12 mb-3">
+                                    <div class="card mb-3 rounded-5 bo-shadow">
+                                        <div
+                                            class="card-header bg-transparent border-0 d-flex align-items-center gap-4">
+                                            <span class="fs-20 fw-bold">Material Req.</span>
+                                            <span
+                                                class="btn fw-bold border border-black rounded-pill px-3 py-2 fs-13">This
+                                                Quarter (Q2)<i class="fa-solid fa-caret-down ps-2"></i></span>
+                                            <i class="fa-solid fa-ellipsis-vertical ms-auto"></i>
+                                        </div>
+                                        <div class="card-body px-2 py-0">
+                                            <div class="table-responsive">
+                                                <table class="table table-borderless m-0">
+                                                    <thead>
+                                                        <tr>
+                                                            <th class="fs-13 text-muted text-center"> Task</th>
+                                                            <th class="fs-13 text-muted text-center"> Status</th>
+                                                            <th class="fs-13 text-muted text-center"> ETA</th>
+                                                            <th class="fs-13 text-muted text-center"> Receipt</th>
+                                                            <th class="fs-13 text-muted text-center"> %</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr class="bg-yellow-opac">
+                                                            <td class="fw-bold fs-12 rounded-start-5"><i
+                                                                    class="fa-regular fa-folder yellow border border-3 border-warning rounded-5 p-1 me-1"></i>
+                                                                1.5 Ton AC</td>
+                                                            <td class="text-center"><span
+                                                                    class="m-0 bg-green rounded-pill px-3 py-1 fw-bold fs-12">Delivered</span>
+                                                            </td>
+                                                            <td class="text-center fs-12">13/05</td>
+                                                            <td class="text-center fs-12"><i
+                                                                    class="fa-solid fa-check bg-green rounded-circle p-2 fw-bold"></i>
+                                                            </td>
+                                                            <td class="text-center rounded-end-5"><span
+                                                                    class="m-0 bg-green rounded-pill px-3 py-1 fw-bold fs-12">Settled</span>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="bg-yellow-opac">
+                                                            <td class="fw-bold fs-12 rounded-start-5"><i
+                                                                    class="fa-regular fa-folder yellow border border-3 border-warning rounded-5 p-1 me-1"></i>
+                                                                Window Frames</td>
+                                                            <td class="text-center"><span
+                                                                    class="m-0 bg-green rounded-pill px-3 py-1 fw-bold fs-12">Dispatched</span>
+                                                            </td>
+                                                            <td class="text-center fs-12">13/05</td>
+                                                            <td class="text-center fs-12"><i
+                                                                    class="fa-solid fa-check bg-green rounded-circle p-2 fw-bold"></i>
+                                                            </td>
+                                                            <td class="text-center rounded-end-5"><span
+                                                                    class="m-0 bg-red rounded-pill px-3 py-1 fw-bold fs-12">Invoiced</span>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="bg-yellow-opac">
+                                                            <td class="fw-bold fs-12 rounded-start-5"><i
+                                                                    class="fa-regular fa-folder yellow border border-3 border-warning rounded-5 p-1 me-1"></i>
+                                                                Glass Panes</td>
+                                                            <td class="text-center"><span
+                                                                    class="m-0 bg-green rounded-pill px-3 py-1 fw-bold fs-12">Delivered</span>
+                                                            </td>
+                                                            <td class="text-center fs-12">13/05</td>
+                                                            <td class="text-center fs-12"><i
+                                                                    class="fa-solid fa-check bg-green rounded-circle p-2 fw-bold"></i>
+                                                            </td>
+                                                            <td class="text-center rounded-end-5"><span
+                                                                    class="m-0 bg-green rounded-pill px-3 py-1 fw-bold fs-12">Settled</span>
+                                                            </td>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="bg-yellow-opac">
+                                                            <td class="fw-bold fs-12 rounded-start-5"><i
+                                                                    class="fa-regular fa-folder yellow border border-3 border-warning rounded-5 p-1 me-1"></i>
+                                                                Steel Fixtures</td>
+                                                            <td class="text-center"><span
+                                                                    class="m-0 bg-green rounded-pill px-3 py-1 fw-bold fs-12">Ordered</span>
+                                                            </td>
+                                                            <td class="text-center fs-12">13/05</td>
+                                                            <td class="text-center fs-12"><i
+                                                                    class="fa-solid fa-check bg-orange rounded-circle p-2 fw-bold"></i>
+                                                            </td>
+                                                            <td class="text-center rounded-end-5"><span
+                                                                    class="m-0 bg-red rounded-pill px-3 py-1 fw-bold fs-12">TBD</span>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                                <div
+                                                    class="card-footer bg-transparent border-0 d-flex align-items-center p-0 py-1 justify-content-between">
+                                                    <span class="btn"><i
+                                                            class="fa-solid fa-caret-down bg-yellow rounded-pill px-3 py-2 fs-6"></i></span>
+                                                    <div class="butt-in d-flex align-items-center">
+                                                        <span class="btn"><i
+                                                                class="fa-solid fa-plus bg-yellow rounded-pill px-3 py-2 fs-6"></i></span>
+                                                        <span class="btn"><i
+                                                                class="fa-solid fa-plus bg-yellow rounded-pill px-3 py-2 fs-6"></i></span>
+                                                        <span class="btn"><i
+                                                                class="fa-solid fa-plus bg-yellow rounded-pill px-3 py-2 fs-6"></i></span>
+                                                        <span
+                                                            class="btn bg-yellow py-2 px-3 rounded-pill fw-bold fs-12">View
+                                                            Reports</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-12">
+                                    <div class="card mb-3 bo-shadow rounded-5">
+                                        <div
+                                            class="card-header bg-transparent border-0 d-flex align-items-center justify-content-between">
+                                            <span class="fw-bold fs-20">Estimated Calc.</span>
+                                            <div class="butt-in d-flex align-items-center gap-1">
+                                                <span class="btn px-2 bg-blue rounded-pill fs-12">Cost<i
+                                                        class="fa-solid fa-caret-down ps-1"></i></span>
+                                                <span class="btn px-2 bg-blue rounded-pill fs-12">By Phase<i
+                                                        class="fa-solid fa-caret-down ps-1"></i></span>
+                                                <span class="btn bg-yellow px-2 rounded-pill fw-bold fs-12">Download
+                                                    xls.</span>
+                                                <span><i class="fa-solid fa-expand yellow fs-12"></i></span>
+                                            </div>
+                                        </div>
+                                        <div class="card-body px-2 py-0">
+                                            <div class="table-responsive">
+                                                <table class="table table-borderless m-0">
+                                                    <thead>
+                                                        <tr>
+                                                            <th class="fs-13 text-center"> Item</th>
+                                                            <th class="fs-13 text-center"> Phase</th>
+                                                            <th class="fs-13 text-center"> ETA</th>
+                                                            <th class="fs-13 text-center"> Invoice</th>
+                                                            <th class="fs-13 text-center"> Value</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr class="bg-yellow-opac">
+                                                            <td class="fw-bold fs-12 rounded-start-5"><i
+                                                                    class="fa-regular fa-folder yellow border border-3 border-warning rounded-5 p-1 me-1"></i>
+                                                                HVAC</td>
+                                                            <td class="text-center"><span
+                                                                    class="m-0 bg-lblue rounded-5 px-2 py-1 fw-bold fs-12">Phase
+                                                                    1</span></td>
+                                                            <td class="text-center fs-12">27/05</td>
+                                                            <td class="text-center"><span
+                                                                    class="m-0 bg-yellow rounded-5 px-3 py-1 fw-bold fs-12">View</span>
+                                                            </td>
+                                                            <td class="text-center fs-12 rounded-end-5">INR 18.2L</span>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="bg-yellow-opac">
+                                                            <td class="fw-bold fs-12 rounded-start-5"><i
+                                                                    class="fa-regular fa-folder yellow border border-3 border-warning rounded-5 p-1 me-1"></i>
+                                                                Tiling</td>
+                                                            <td class="text-center"><span
+                                                                    class="m-0 bg-purple rounded-5 px-2 py-1 fw-bold fs-12">Phase
+                                                                    2</span></td>
+                                                            <td class="text-center fs-12">27/05</td>
+                                                            <td class="text-center"><span
+                                                                    class="m-0 bg-yellow rounded-5 px-3 py-1 fw-bold fs-12">View</span>
+                                                            </td>
+                                                            <td class="text-center fs-12 rounded-end-5">INR 18.2L</span>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="bg-yellow-opac">
+                                                            <td class="fw-bold fs-12 rounded-start-5"><i
+                                                                    class="fa-regular fa-folder yellow border border-3 border-warning rounded-5 p-1 me-1"></i>
+                                                                Decor</td>
+                                                            <td class="text-center"><span
+                                                                    class="m-0 bg-purple rounded-5 px-2 py-1 fw-bold fs-12">Phase
+                                                                    2</span></td>
+                                                            <td class="text-center fs-12">27/05</td>
+                                                            <td class="text-center"><span
+                                                                    class="m-0 bg-yellow rounded-5 px-3 py-1 fw-bold fs-12">View</span>
+                                                            </td>
+                                                            <td class="text-center fs-12 rounded-end-5">INR 18.2L</span>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="bg-yellow-opac">
+                                                            <td class="fw-bold fs-12 rounded-start-5"><i
+                                                                    class="fa-regular fa-folder yellow border border-3 border-warning rounded-5 p-1 me-1"></i>
+                                                                Furnishing</td>
+                                                            <td class="text-center"><span
+                                                                    class="m-0 bg-pink rounded-5 px-2 py-1 fw-bold fs-12">Phase
+                                                                    3</span></td>
+                                                            <td class="text-center fs-12">27/05</td>
+                                                            <td class="text-center"><span
+                                                                    class="m-0 bg-yellow rounded-5 px-3 py-1 fw-bold fs-12">View</span>
+                                                            </td>
+                                                            <td class="text-center fs-12 rounded-end-5">INR 18.2L</span>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="card-footer border-0 d-flex align-items-center justify-content-between bg-yellow bo-shadow rounded-bottom-5 py-3">
+                                            <span class="fs-20 fw-bold">Sum Total</span>
+                                            <span class="fs-20 fw-bold">INR 74,34,700/-</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!--Section-4-End-->
+
+                    <!--Section-5-->
+                    <section class="content-5">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-lg-6 col-md-12 mb-3">
+                                    <div class="card mb-3 rounded-5 bo-shadow">
+                                        <div class="card-header bg-transparent border-0 d-flex align-items-center">
+                                            <span class="fs-20 fw-bold">Teams & Members</span>
+                                            <div class="members d-flex align-items-center ms-auto gap-3">
+                                                <span
+                                                    class="fs-12 bg-yellow px-3 py-1 rounded-pill fw-bold">Support</span>
+                                                <i class="fa-solid fa-ellipsis-vertical"></i>
+                                            </div>
+                                        </div>
+                                        <div class="card-body px-2">
+                                            <div class="member-1 d-flex align-items-center gap-2 mb-2">
+                                                <div
+                                                    class="user-icon-1 d-flex align-items-center border border-2 border-warning rounded-pill px-3 py-1 gap-2">
+                                                    <img src="assets/images/user.png" alt=""
+                                                        class="bg-yellow rounded-circle">
+                                                    <div class="user-name">
+                                                        <p class="fw-bold m-0 fs-12">Karan Sethi - Director</p>
+                                                        <p class="m-0 fs-10">Overseeing Operations</p>
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    class="user-icon-1 d-flex align-items-center border border-2 border-warning rounded-pill px-3 py-1 gap-2">
+                                                    <img src="assets/images/user.png" alt=""
+                                                        class="bg-yellow rounded-circle">
+                                                    <div class="user-name">
+                                                        <p class="fw-bold m-0 fs-12">Navneet Sethi - CEO</p>
+                                                        <p class="m-0 fs-10">Bossman</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="member-2 d-flex align-items-center gap-2 mb-2">
+                                                <div
+                                                    class="user-icon-1 d-flex align-items-center border border-2 border-warning rounded-pill px-3 py-1 gap-2">
+                                                    <img src="assets/images/user.png" alt=""
+                                                        class="bg-yellow rounded-circle">
+                                                    <div class="user-name">
+                                                        <p class="fw-bold m-0 fs-12">Vikas Kumar - UI Developer</p>
+                                                        <p class="m-0 fs-10">Developing UI & Researching Functionality
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    class="user-icon-1 d-flex align-items-center border border-2 border-warning rounded-pill px-3 py-1 gap-2">
+                                                    <img src="assets/images/user.png" alt=""
+                                                        class="bg-yellow rounded-circle">
+                                                    <div class="user-name">
+                                                        <p class="fw-bold m-0 fs-12">Sumeet Yadav - TechDev</p>
+                                                        <p class="m-0 fs-10">R&D</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="member-3 d-flex align-items-center gap-2">
+                                                <div
+                                                    class="user-icon-1 d-flex align-items-center border border-2 border-warning rounded-pill px-3 py-1 gap-2">
+                                                    <img src="assets/images/user.png" alt=""
+                                                        class="bg-yellow rounded-circle">
+                                                    <div class="user-name">
+                                                        <p class="fw-bold m-0 fs-12">Rivanshu - MERN Dev.</p>
+                                                        <p class="m-0 fs-10">Working on DBMS</p>
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    class="user-icon-1 d-flex align-items-center border border-2 border-warning rounded-pill px-3 py-1 gap-2">
+                                                    <img src="assets/images/user.png" alt=""
+                                                        class="bg-yellow rounded-circle">
+                                                    <div class="user-name">
+                                                        <p class="fw-bold m-0 fs-12">Raghu R Rathore - UX Dev. PM</p>
+                                                        <p class="m-0 fs-10">Organizing & Ideating UX Builds</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6 col-6 mb-3">
+                                    <div class="card rounded-5 bo-shadow">
+                                        <div
+                                            class="card-header bg-transparent border-0 d-flex align-items-center justify-content-between">
+                                            <span class="fs-20 fw-bold">Calendar</span>
+                                            <i class="fa-solid fa-ellipsis"></i>
+                                        </div>
+                                        <div class="card-body p-2 pe-0">
+                                            <div class="calendar bg-yellow-opac rounded-4">
+                                                <div class="calendar-header bg-yellow-opac rounded-top-4">
+                                                    <div class="calendar-navigation">
+                                                        <button id="prev-year-btn"><i
+                                                                class="fa-solid fa-angles-left fs-12 pe-2"></i></button>
+                                                        <button id="prev-month-btn"><i
+                                                                class="fa-solid fa-angle-left fs-12"></i></button>
+                                                    </div>
+                                                    <h6 id="current-month-year" class="m-0 fw-bold"></h6>
+                                                    <div class="calendar-navigation">
+                                                        <button id="next-month-btn"><i
+                                                                class="fa-solid fa-angle-right fs-12 pe-2"></i></button>
+                                                        <button id="next-year-btn"><i
+                                                                class="fa-solid fa-angles-right fs-12"></i></button>
+                                                    </div>
+                                                </div>
+                                                <div class="calendar-weekdays bg-yellow-opac">
+                                                    <div style="font-size: 10px;">Sun</div>
+                                                    <div style="font-size: 10px;">Mon</div>
+                                                    <div style="font-size: 10px;">Tue</div>
+                                                    <div style="font-size: 10px;">Wed</div>
+                                                    <div style="font-size: 10px;">Thu</div>
+                                                    <div style="font-size: 10px;">Fri</div>
+                                                    <div style="font-size: 10px;">Sat</div>
+                                                </div>
+                                                <div class="calendar-days" id="calendar-days" style="font-size: 10px;">
+                                                </div>
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6 col-6">
+                                    <div class="card rounded-5 bo-shadow mb-2">
+                                        <div class="card-header bg-transparent border-0">
+                                            <span class="fs-20 fw-bold">Payments & Bank Accounts</span>
+                                        </div>
+                                        <div class="card-body py-0 px-2 d-flex gap-2 align-items-center">
+                                            <span class="px-2 py-1 bg-lblue rounded-circle fs-13"><i
+                                                    class="fa-solid fa-landmark"></i></span>
+                                            <span class="px-2 py-1 rounded-circle bg-yellow fs-13"><i
+                                                    class="fa-solid fa-landmark"></i></span>
+                                            <span class="px-2 py-1 rounded-circle bg-red fs-13"><i
+                                                    class="fa-solid fa-landmark"></i></span>
+                                            <span class="px-2 py-1 rounded-circle bg-lblue fs-13"><i
+                                                    class="fa-solid fa-landmark"></i></span>
+                                            <span class="px-2 py-1 rounded-pill bg-yellow fs-12 fw-bold">More</span>
+                                        </div>
+                                        <div class="card-footer bg-transparent border-0 px-2">
+                                            <img src="assets/images/Card 2.png" alt="" width="100%">
+                                        </div>
+                                    </div>
+                                    <span
+                                        class="bg-yellow px-2 py-2 rounded-5 fs-12 fw-bold d-block text-center bo-shadow">View
+                                        Documentation & Agreements</span>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!--Section-5-End-->
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
