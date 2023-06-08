@@ -131,3 +131,7 @@ document.getElementById('next-year-btn').addEventListener('click', nextYear);
 
 // Initial rendering of the calendar
 renderCalendar();
+
+
+
+

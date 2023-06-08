@@ -9,34 +9,35 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
 </head>
 
 <body>
     <div class="wrapper d-flex">
 
         <div class="sidebar" id="sidebar">
-            <div class="header mb-4">
+            <div class="header mb-4 wow bounceInDown"  data-wow-duration="1s" data-wow-delay="0.5s">
                 <img src="assets/images/Logo.png" alt="logo" id="Logo" class="w-100">
             </div>
             <ul class="list-group mx-5">
-                <li class="list-group-item border-0 mb-3 rounded-3 active"><a href="javascript:void(0);"
+                <li class="list-group-item border-0 mb-3 rounded-3 active wow slideInLeft" data-wow-duration="0.5s" data-wow-delay="0.5s"><a href="javascript:void(0);"
                         class="fs-15 fw-bold"><img src="assets/images/Side-bar/1.png" class="pe-4" />Dashboard</a></li>
-                <li class="list-group-item border-0 mb-3 rounded-3"><a href="javascript:void(0);"
+                <li class="list-group-item border-0 mb-3 rounded-3 wow slideInLeft" data-wow-duration="1s" data-wow-delay="1s"><a href="javascript:void(0);"
                         class="fs-15 fw-bold"><img src="assets/images/Side-bar/2.png" class="pe-4" />Analytics</a></li>
-                <li class="list-group-item border-0 mb-3 rounded-3"><a href="javascript:void(0);"
+                <li class="list-group-item border-0 mb-3 rounded-3 wow slideInLeft" data-wow-duration="1.5s" data-wow-delay="1.5s"><a href="javascript:void(0);"
                         class="fs-15 fw-bold"><img src="assets/images/Side-bar/3.png" class="pe-4" />Timesheets</a></li>
-                <li class="list-group-item border-0 mb-3 rounded-3"><a href="javascript:void(0);"
+                <li class="list-group-item border-0 mb-3 rounded-3 wow slideInLeft" data-wow-duration="2s" data-wow-delay="2s"><a href="javascript:void(0);"
                         class="fs-15 fw-bold"><img src="assets/images/Side-bar/4.png" class="pe-4" />Todo</a></li>
-                <li class="list-group-item border-0 mb-3 rounded-3"><a href="javascript:void(0);"
+                <li class="list-group-item border-0 mb-3 rounded-3 wow slideInLeft" data-wow-duration="2.5s" data-wow-delay="2.5s"><a href="javascript:void(0);"
                         class="fs-15 fw-bold"><img src="assets/images/Side-bar/5.png" class="pe-4" />Report</a></li>
-                <li class="list-group-item border-0 rounded-3"><a href="javascript:void(0);" class="fs-15 fw-bold"><img
+                <li class="list-group-item border-0 rounded-3 wow slideInLeft" data-wow-duration="3s" data-wow-delay="3s"><a href="javascript:void(0);" class="fs-15 fw-bold"><img
                             src="assets/images/Side-bar/6.png" class="pe-4" />Details</a></li>
             </ul>
         </div>
 
         <div class="content w-100 mb-2 py-2">
             <div class="container-fluid">
-                <div class="search-menu d-flex align-items-center mb-2">
+                <div class="search-menu d-flex align-items-center mb-2 wow bounceInDown">
                     <span class="btn open-btn ps-0" onclick="toggleSidebar()"><i
                             class="fa-solid fa-bars-staggered"></i></span>
                     <div class="row align-items-center w-100">
@@ -60,7 +61,7 @@
                     </div>
                 </div>
                 <div class="row text-center">
-                    <div class="col-12">
+                    <div class="col-12 wow tada" data-wow-duration="1s" data-wow-delay="2s">
                         <h4>Dashboard</h4>
                         <h6 class="text-muted">ebuildbazaar / Dashboard</h6>
                     </div>
@@ -72,11 +73,11 @@
                     <section class="content-1 mb-3">
                         <div class="container-fluid">
                             <div class="row align-items-center">
-                                <div class="col-lg-6 col-md-12 mb-3">
+                                <div class="col-lg-6 col-md-12 mb-3 wow slideInLeft" data-wow-duration="1s" data-wow-delay="1s">
                                     <h1>Activities Tracker</h1>
                                     <h5 class="fw-bold m-0">23rd May | 10:43 AM</h5>
                                 </div>
-                                <div class="col-lg-6 col-md-12">
+                                <div class="col-lg-6 col-md-12 wow slideInRight" data-wow-duration="1s" data-wow-delay="1s">
                                     <div class="button d-flex gap-4 align-items-center justify-content-center">
                                         <ul class="nav nav-tabs border-0 bg-white rounded-pill bo-shadow p-2">
                                             <li class="nav-item dropdown">
@@ -118,7 +119,7 @@
                     <section class="content-2 mb-3">
                         <div class="container-fluid">
                             <div class="row">
-                                <div class="col-lg-7 col-md-12 mb-3">
+                                <div class="col-lg-7 col-md-12 mb-3 wow slideInLeft" data-wow-duration="2s" data-wow-delay="2s">
                                     <div class="card mb-3 bo-shadow rounded-5">
                                         <div
                                             class="card-header bg-transparent border-0 d-flex align-items-center gap-4">
@@ -245,7 +246,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-5 col-md-12">
+                                <div class="col-lg-5 col-md-12 wow slideInRight" data-wow-duration="2s" data-wow-delay="2s">
                                     <div class="card mb-3 bo-shadow rounded-4">
                                         <div
                                             class="card-header bg-transparent border-0 d-flex align-items-center justify-content-between">
@@ -298,7 +299,7 @@
                             <div class="row">
                                 <div class="col-lg-6 col-md-12">
                                     <div class="row">
-                                        <div class="col-md-4 col-6 mb-2">
+                                        <div class="col-md-4 col-6 mb-2 wow slideInDown" data-wow-duration="1s" data-wow-delay="3s">
                                             <div class="card mb-3 rounded-4 bo-shadow">
                                                 <div
                                                     class="card-header d-flex bg-transparent justify-content-between p-2 border-0 mb-4">
@@ -313,7 +314,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-md-4 col-6 mb-2">
+                                        <div class="col-md-4 col-6 mb-2 wow slideInDown" data-wow-duration="1.5s" data-wow-delay="3.5s">
                                             <div class="card mb-3 rounded-4 bo-shadow">
                                                 <div
                                                     class="card-header d-flex bg-transparent justify-content-between p-2 border-0 mb-4">
@@ -328,7 +329,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-md-4 col-6">
+                                        <div class="col-md-4 col-6 wow slideInDown" data-wow-duration="2s" data-wow-delay="4s"">
                                             <div class="card mb-3 rounded-4 bo-shadow">
                                                 <div
                                                     class="card-header d-flex bg-transparent justify-content-between p-2 border-0 mb-4">
@@ -802,6 +803,19 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script>
+        wow = new WOW(
+            {
+                boxClass: 'wow',      // default
+                animateClass: 'animated', // default
+                offset: 0,          // default
+                mobile: true,       // default
+                live: true        // default
+            }
+        )
+        wow.init();
+    </script>
 </body>
 
 </html>
